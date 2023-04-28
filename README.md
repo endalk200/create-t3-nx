@@ -24,7 +24,7 @@ The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-ap
 ## Contributors
 
 <a href="https://github.com/endalk200/create-t3-nx/graphs/contributors">
-  <p align="center">
+  <p>
     <img width="60px" src="https://contrib.rocks/image?repo=endalk200/create-t3-nx" alt="A table of avatars from the project's contributors" />
   </p>
 </a>
