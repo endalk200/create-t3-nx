@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@repo/api": ["libs/api/src/index.ts"],
+      "@repo/auth": ["libs/auth/src/index.ts"],
+      "@repo/db": ["libs/db/src/index.ts"],
       "@repo/env-validator": ["libs/env-validator/src/index.ts"]
     }
   },

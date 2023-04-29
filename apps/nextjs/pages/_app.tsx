@@ -1,18 +1,19 @@
-import { AppProps } from "next/app";
-import Head from "next/head";
-import "./styles.css";
+import '../styles/globals.css';
+import type { AppType } from 'next/app';
+import type { Session } from 'next-auth';
+import { SessionProvider } from 'next-auth/react';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+import { api } from '../utils/api';
+
+const MyApp: AppType<{ session: Session | null }> = ({
+  Component,
+  pageProps: { session, ...pageProps },
+}) => {
   return (
-    <>
-      <Head>
-        <title>Welcome to nextjs!</title>
-      </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
-    </>
+    <SessionProvider session={session}>
+      <Component {...pageProps} />
+    </SessionProvider>
   );
-}
+};
 
-export default CustomApp;
+export default api.withTRPC(MyApp);

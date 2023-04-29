@@ -1,5 +1,7 @@
 # create-t3-nx
 
+![screenshot](./docs/assets/screenshot.png)
+
 Create t3 nx is a starter template that enables you to use t3 stack in Nx monorepo.
 
 ## Directory tree
@@ -12,15 +14,18 @@ This template has the following directory tree
 ├── apps/
 │   └── nextjs - NextJs 13
 └── libs/
-    ├── env-validator/
+    ├── db/
     │   └── src/
-    │       └── lib - Runtime and build time environment variable validator with full type safety
+    │       └── lib - Prisma library to contain prisma schema and helper function
     ├── auth/
     │   └── src/
     │       └── lib - auth library for Nextauth helper function and authOptions config
-    └── db/
+    ├── api/
+    │   └── src/
+    │       └── lib - tRPC configuration and procedures
+    └── env-validator/
         └── src/
-            └── lib - Prisma library to contain prisma schema and helper function
+            └── lib - Runtime and build time environment variable validator with full type safety
 ```
 
 ## References
