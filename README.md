@@ -12,9 +12,15 @@ This template has the following directory tree
 ├── apps/
 │   └── nextjs - NextJs 13
 └── libs/
-    └── env-validator/
+    ├── env-validator/
+    │   └── src/
+    │       └── lib - Runtime and build time environment variable validator with full type safety
+    ├── auth/
+    │   └── src/
+    │       └── lib - auth library for Nextauth helper function and authOptions config
+    └── db/
         └── src/
-            └── lib - Runtime and build time environment variable validator with full type safety
+            └── lib - Prisma library to contain prisma schema and helper function
 ```
 
 ## References
