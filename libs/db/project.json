@@ -1,0 +1,48 @@
+{
+  "name": "db",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/db/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/db/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/db/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "migrate-dev": {
+      "command": "npx prisma migrate dev --schema ./src/lib/prisma/schema.prisma",
+      "options": {
+        "cwd": "libs/db"
+      }
+    },
+    "db-push": {
+      "command": "npx prisma db push --schema ./src/lib/prisma/schema.prisma",
+      "options": {
+        "cwd": "libs/db"
+      }
+    },
+    "gen-client": {
+      "command": "npx prisma generate --schema ./src/lib/prisma/schema.prisma",
+      "options": {
+        "cwd": "libs/db"
+      }
+    }
+  },
+  "tags": []
+}
