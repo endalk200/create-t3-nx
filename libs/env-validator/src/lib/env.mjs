@@ -6,6 +6,8 @@ import { z } from 'zod';
  */
 const server = z.object({
   NODE_ENV: z.enum(['development', 'test', 'production']),
+  GITHUB_CLIENT_ID: z.string().nonempty(),
+  GITHUB_CLIENT_SECRET: z.string().nonempty(),
 });
 
 /**
@@ -26,6 +28,8 @@ const client = z.object(
  */
 const processEnv = {
   NODE_ENV: process.env.NODE_ENV,
+  GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
+  GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
 };
 
 // Don't touch the part below
