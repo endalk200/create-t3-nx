@@ -30,7 +30,8 @@
       "configurations": {
         "development": {
           "buildTarget": "nextjs:build:development",
-          "dev": true
+          "dev": true,
+          "port": 3000
         },
         "production": {
           "buildTarget": "nextjs:build:production",
