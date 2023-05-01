@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:nextjs": "nx run nextjs:serve"
+    "start:nextjs": "nx run nextjs:serve",
+    "db:migrate-dev": "nx run db:migrate-dev",
+    "db:db-push": "nx run db:db-push",
+    "db:gen-client": "nx run db:gen-client"
   },
   "private": true,
   "dependencies": {
