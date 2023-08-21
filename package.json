@@ -31,7 +31,7 @@
     "@nrwl/eslint-plugin-nx": "16.0.1",
     "@nrwl/jest": "16.3.2",
     "@nrwl/js": "15.9.2",
-    "@nrwl/linter": "15.9.2",
+    "@nrwl/linter": "16.7.2",
     "@nrwl/node": "^15.9.2",
     "@nrwl/react": "15.9.2",
     "@nrwl/workspace": "15.9.2",
