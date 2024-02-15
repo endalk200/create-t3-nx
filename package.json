@@ -40,7 +40,7 @@
     "@types/node": "18.14.2",
     "@types/react": "18.2.8",
     "@types/react-dom": "18.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^5.36.1",
     "autoprefixer": "^10.4.14",
     "babel-jest": "^29.4.1",
