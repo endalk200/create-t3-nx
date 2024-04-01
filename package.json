@@ -29,7 +29,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
     "@nrwl/eslint-plugin-nx": "16.0.1",
-    "@nrwl/jest": "16.3.2",
+    "@nrwl/jest": "18.2.1",
     "@nrwl/js": "15.9.2",
     "@nrwl/linter": "16.7.4",
     "@nrwl/node": "^15.9.2",
