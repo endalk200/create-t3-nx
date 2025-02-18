@@ -19,7 +19,7 @@
     "@trpc/react-query": "^10.21.2",
     "@trpc/server": "^10.21.2",
     "next": "15.1.2",
-    "next-auth": "^4.22.1",
+    "next-auth": "^4.24.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "^1.12.3",
