@@ -15,7 +15,7 @@
     "@prisma/client": "^5.2.0",
     "@tanstack/react-query": "^4.29.5",
     "@trpc/client": "^10.29.1",
-    "@trpc/next": "^10.21.2",
+    "@trpc/next": "^10.45.2",
     "@trpc/react-query": "^10.21.2",
     "@trpc/server": "^10.21.2",
     "next": "15.1.2",
